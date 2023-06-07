@@ -9,7 +9,8 @@
     "learn:02": "node learn/02-modularization/index",
     "learn:03": "node learn/03-events/index",
     "learn:04": "node learn/04-filesystem/index",
-    "learn:05": "node learn/05-readable-stream/index"
+    "learn:05": "node learn/05-readable-stream/index",
+    "learn:06": "node learn/06-writeable-stream/index"
   },
   "keywords": [],
   "author": "rashiop",
