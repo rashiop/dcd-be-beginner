@@ -8,7 +8,8 @@
     "learn:01": "NODE_ENV=development node learn/01-process-object.js rashiop",
     "learn:02": "node learn/02-modularization/index",
     "learn:03": "node learn/03-events/index",
-    "learn:04": "node learn/04-filesystem/index"
+    "learn:04": "node learn/04-filesystem/index",
+    "learn:05": "node learn/05-readable-stream/index"
   },
   "keywords": [],
   "author": "rashiop",
