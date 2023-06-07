@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "learn:01": "NODE_ENV=development node learn/01-process-object.js rashiop",
     "learn:02": "node learn/02-modularization/index",
-    "learn:03": "node learn/03-events/index"
+    "learn:03": "node learn/03-events/index",
+    "learn:04": "node learn/04-filesystem/index"
   },
   "keywords": [],
   "author": "rashiop",
