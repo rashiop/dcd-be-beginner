@@ -28,7 +28,8 @@ const routes = [
     path: '/hello/{username?}',
     handler: (request, h) => {
       const { username = 'stranger' } = request.params
-      return `Hello ${username}`
+      const { location = 'wonderland' } = request.query
+      return `Hello ${username}; are you going to ${location}?`
     },
   },
   {
