@@ -17,6 +17,22 @@ const routes = [
   },
   {
     method: 'GET',
+    path: '/user/{username?}',
+    handler: (request, h) => {
+      const { username = 'anon' } = request.params
+      return `Hi ${username}!`
+    },
+  },
+  {
+    method: 'GET',
+    path: '/hello/{username?}',
+    handler: (request, h) => {
+      const { username = 'stranger' } = request.params
+      return `Hello ${username}`
+    },
+  },
+  {
+    method: 'GET',
     path: '/about',
     handler: (request, h) => {
       return {
