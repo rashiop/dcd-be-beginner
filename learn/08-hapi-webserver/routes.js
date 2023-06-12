@@ -16,6 +16,16 @@ const routes = [
     },
   },
   {
+    method: 'POST',
+    path: '/login',
+    handler: (request, h) => {
+      const { email, password } = request.payload || {}
+      return {
+        message: `Welcome ${email}`,
+      }
+    },
+  },
+  {
     method: 'GET',
     path: '/user/{username?}',
     handler: (request, h) => {
