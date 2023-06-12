@@ -3,7 +3,10 @@ const routes = [
     method: 'GET',
     path: '/',
     handler: (request, h) => {
-      return 'Homepage'
+      const response = h.response('Homepage').code(200)
+      response.type('text/plain')
+      response.header('X-Custom', 'value')
+      return response
     },
   },
   {
@@ -20,9 +23,8 @@ const routes = [
     path: '/login',
     handler: (request, h) => {
       const { email, password } = request.payload || {}
-      return {
-        message: `Welcome ${email}`,
-      }
+      const response = h.response(`Welcome ${email}`).code(201)
+      return response
     },
   },
   {
