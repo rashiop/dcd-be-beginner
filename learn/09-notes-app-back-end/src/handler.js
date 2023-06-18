@@ -31,6 +31,7 @@ const addNoteHandler = (request, h) => {
     })
 
     response.header('Access-Control-Allow-Origin', 'http://notesapp-v1.dicodingacademy.com')
+    response.code(201)
     return response
   }
 
