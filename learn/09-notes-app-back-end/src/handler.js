@@ -109,7 +109,7 @@ const deleteNoteByIdHandler = (request, h) => {
   const { id: noteId } = request.params
   const index = notes.findIndex(({ id }) => id === noteId)
 
-  if (!index) {
+  if (index !== -1) {
     const response = h.response({
       error: true,
       status: 'fail',
